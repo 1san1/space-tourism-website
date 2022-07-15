@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style3.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <img id="logo" src="./assets/shared/logo.svg" alt="logo" />
+        <div id="line"></div>
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="hamburger menu"
+          id="hamburger"
+        />
+        <nav id="navigation">
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="close menu"
+            id="close"
+          />
+
+          <ul>
+            <li id="home">
+              <a href="index.html"><span id="navNum">00</span> Home</a>
+            </li>
+            <li id="destination">
+              <a href="destination-moon.html"
+                ><span id="navNum">01</span> Destination</a
+              >
+            </li>
+            <li id="crew">
+              <a href="crew-commander.html"><span id="navNum">02</span> Crew</a>
+            </li>
+            <li id="technology">
+              <a href="technology-vehicle.html"
+                ><span id="navNum">03</span> Technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contentPic">
+        <h1><span class="titleNumber">03</span> Space launch 101</h1>
+
+        <img
+          src="./assets/technology/image-space-capsule-landscape.jpg"
+          alt="space capsule"
+        />
+        <section id="innerContent">
+          <div class="subNav">
+            <a class="one" href="./technology-vehicle.html">1</a>
+            <a class="two" href="./technology-capsule.html">2</a>
+            <a class="three" href="./technology-spaceport.html">3</a>
+          </div>
+          <div class="innerContentP">
+            <h3>The terminology...</h3>
+            <h2>Space capsule</h2>
+            <p class="planetDescription">
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script>
+    const nav = document.getElementById("navigation");
+    const closer = document.getElementById("close");
+    const hamburger = document.getElementById("hamburger");
+    hamburger.addEventListener("click", () => {
+      nav.style.display = "block";
+      closer.style.display = "block";
+      hamburger.style.display = "none";
+    });
+    closer.addEventListener("click", () => {
+      nav.style.display = "none";
+      closer.style.display = "none";
+      hamburger.style.display = "block";
+    });
+  </script>
+</html>
