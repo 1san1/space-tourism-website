@@ -97,6 +97,10 @@ h3 {
   letter-spacing: 1.25px;
 }
 
+#explore:hover {
+  cursor: pointer;
+  border: 50px solid hsl(0, 0%, 70%);
+}
 #navigation ul {
   position: relative;
   list-style-type: none;
